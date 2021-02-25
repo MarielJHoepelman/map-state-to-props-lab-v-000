@@ -7,8 +7,8 @@ class Users extends Component {
       <div>
         <div>Number of users: {this.props.users.length}</div>
         <ul>
-          {this.props.users.map((user) => (
-            <li key={user.username}>{user.username}</li>
+          {this.props.users.map((user, index) => (
+            <li key={index}>{user.username}</li>
           ))}
         </ul>
       </div>
